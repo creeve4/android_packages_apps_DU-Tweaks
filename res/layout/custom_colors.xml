@@ -35,7 +35,7 @@
         android:layout_columnWeight="1"
         android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="#42069a" />
+        android:background="#2194ff" />
 
     <Button
         android:id="@+id/userAccentThree"
