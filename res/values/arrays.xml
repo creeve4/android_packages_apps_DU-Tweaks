@@ -176,6 +176,7 @@
     </string-array>
 
      <string-array name="clock_date_format_entries_values">
+        <item>d</item>
         <item>dd/MM/yy</item>
         <item>MM/dd/yy</item>
         <item>yyyy-MM-dd</item>
