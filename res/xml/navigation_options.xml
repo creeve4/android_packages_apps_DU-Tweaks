@@ -23,6 +23,13 @@
         android:summary="@string/navigation_bar_summary" />
 
     <Preference
+        android:key="pulse"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:dependency="force_show_navbar"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.navigation.PulseSettings" />
+
+    <Preference
         android:key="gesture_system_navigation"
         android:title="@string/system_navigation_title"
         android:dependency="force_show_navbar"
@@ -57,7 +64,7 @@
         android:title="@string/button_backlight_title"
         android:summary="@string/button_backlight_summary"
         android:persistent="false"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.ButtonBrightness" />
+        android:fragment="com.dirtyunicorns.tweaks.fragments.navigation.ButtonBrightness" />
 
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="navigation_bar_menu_arrow_keys"
@@ -193,7 +200,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.BackLongPress" />
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navigation.customactions.BackLongPress" />
         </Preference>
 
         <ListPreference
@@ -208,7 +215,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.BackDoubleTap" />
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navigation.customactions.BackDoubleTap" />
         </Preference>
 
     </PreferenceCategory>
@@ -229,7 +236,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.HomeLongPress" />
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navigation.customactions.HomeLongPress" />
         </Preference>
 
         <ListPreference
@@ -244,7 +251,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.HomeDoubleTap" />
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navigation.customactions.HomeDoubleTap" />
         </Preference>
 
     </PreferenceCategory>
@@ -265,7 +272,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.AppSwitchLongPress" />
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navigation.customactions.AppSwitchLongPress" />
         </Preference>
 
         <ListPreference
@@ -280,7 +287,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.dirtyunicorns.tweaks.fragments.navbar.AppSwitchDoubleTap" />
+                android:targetClass="com.dirtyunicorns.tweaks.fragments.navigation.customactions.AppSwitchDoubleTap" />
         </Preference>
 
     </PreferenceCategory>
